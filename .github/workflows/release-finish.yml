@@ -27,9 +27,6 @@ jobs:
         with:
           node-version: "18.20.0"
 
-      - name: Install Dependencies
-        run: yarn install
-
       - name: Install git flow
         run: |
           sudo apt-get update
@@ -49,21 +46,9 @@ jobs:
           TODAY_DATE=$(node -e 'const today = new Date(); console.log(`${today.getFullYear()}${String(today.getMonth() + 1).padStart(2, "0")}${String(today.getDate()).padStart(2, "0")}`)')
           echo "RELEASE_BRANCH_NAME=${TODAY_DATE}-0" >> $GITHUB_ENV
 
-      - name: test
-        run: git checkout master && git log
-
       # 릴리즈 브랜치 닫기 (TODO: wq 자동화)
       - name: Publish Release Branch
         run: |
-          git remote -v
-          git checkout -t origin/release/${{ env.RELEASE_BRANCH_NAME }}
-          echo "릴리즈 브랜치 Log"
-          git log
-
-          echo "master <-> release"
-          git merge-base master release/${{ env.RELEASE_BRANCH_NAME }}
-
-          echo "develop <-> release"
-          git merge-base develop release/${{ env.RELEASE_BRANCH_NAME }}
+          git flow release pull origin ${{ env.RELEASE_BRANCH_NAME }}
 
           git flow release finish -Fpn  ${{ env.RELEASE_BRANCH_NAME }}
