@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 0.5.1 (2024-11-11)
+
+
+### Bug Fix
+
+* 릴리즈 브랜치 이름 수정 ([c8498fb](https://github.com/WynterKim/monorepo-test/commit/c8498fba7c9b8e110bdff548556940fce3b1decc))
+
+
+
 ## 0.5.0 (2024-11-11)
 
 
