@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.6.0 (2024-11-11)
+
+
+### New Features
+
+* 릴리즈 워크플로우 활성화 ([#7](https://github.com/ellen-lee-goorm/monorepo-test/issues/7)) ([a2f7223](https://github.com/ellen-lee-goorm/monorepo-test/commit/a2f722345aad41a91af835dc47e78d73012af981))
+* 정기 릴리즈를 위한 커밋 ([8c161c2](https://github.com/ellen-lee-goorm/monorepo-test/commit/8c161c257371309484d25e3237e655796dc47846))
+
+
+
 ## 0.5.0 (2024-11-11)
 
 
