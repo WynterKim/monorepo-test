@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 0.5.1 (2024-11-11)
+
+
+### New Features
+
+* 정기 릴리즈를 위한 커밋 ([c6399de](https://github.com/WynterKim/monorepo-test/commit/c6399decf0435d4bac219b2242fc1f9e296fb1d0))
+
+
+
 ## 0.5.0 (2024-11-11)
 
 
